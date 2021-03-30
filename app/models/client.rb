@@ -5,6 +5,6 @@ class Client < ApplicationRecord
 
   has_secure_password
 
-  validates_presence_of :username, :name, :email
+  validates_presence_of :username, :name, :email, :password_digest
   validates_uniqueness_of :username
 end
